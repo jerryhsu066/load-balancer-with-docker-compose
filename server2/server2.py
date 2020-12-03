@@ -6,9 +6,5 @@ server2 = Flask(__name__)
 def home():
     return '<h1>Hello AsiaYo 2</h1>'
 
-@server2.route('/favicon.ico')
-def favicon():
-    return '', 204
-
 if __name__ == '__main__':
     server2.run(debug = True, host = '0.0.0.0')
